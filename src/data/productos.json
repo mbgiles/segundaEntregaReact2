@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "nombre": "Mate",
+        "precio": 2000.00,
+        "imagen": "src/assets/mate_2.jpeg",
+        "descripcion": "Mate pintado a mano",
+        "categoria": {
+            "id": "mate",
+            "nombre": "Mates"
+        }
+    },
+    {
+        "id": 2,
+        "nombre": "Mate Margarita",
+        "precio": 1500.00,
+        "imagen": "src/assets/mate-1.jpeg",
+        "descripcion": "Mate Margarita.",
+        "categoria": {
+            "id": "mate",
+            "nombre": "Mates"
+        }
+    },
+    {
+        "id": 3,
+        "nombre": "Mate She",
+        "precio": 1500.00,
+        "imagen": "src/assets/mate_3.jpeg",
+        "descripcion": "Mate She",
+        "categoria": {
+            "id": "mate",
+            "nombre": "Mates"
+        }
+    },
+    {
+        "id": 4,
+        "nombre": "Mate Flower Black",
+        "precio": 2000.00,
+        "imagen": "src/assets/mate_4.jpeg",
+        "descripcion": "Mate pintado a mano",
+        "categoria": {
+            "id": "mate",
+            "nombre": "Mates"
+        }
+    },
+    {
+        "id": 5,
+        "nombre": "Mate White",
+        "precio": 1500.00,
+        "imagen": "src/assets/mate_5.jpeg",
+        "descripcion": "Mate White Natural",
+        "categoria": {
+            "id": "mate",
+            "nombre": "Mates"
+        }
+    },
+    {
+        "id": 6,
+        "nombre": "Mate + Yerbera",
+        "precio": 4000.00,
+        "imagen": "src/assets/mate_7.jpeg",
+        "descripcion": "Set de mate y yerbera haciendo juego",
+        "categoria": {
+            "id": "sets",
+            "nombre": "Sets"
+        }
+    },
+    {
+        "id": 7,
+        "nombre": "Set Aurora",
+        "precio": 5000.99,
+        "imagen": "src/assets/set_1.jpeg",
+        "descripcion": "Este set contiene mate, yerbera, azucarera, bombillas y termo!",
+        "categoria": {
+            "id": "sets",
+            "nombre": "Sets"
+        }
+    },
+    {
+        "id": 8,
+        "nombre": "Set Nature",
+        "precio": 3000.00,
+        "imagen": "src/assets/set_2.jpeg",
+        "descripcion": "Hermoso set naturaleza. Viene con mate, cuenco y termo!",
+        "categoria": {
+            "id": "sets",
+            "nombre": "Sets"
+        }
+    },
+    {
+        "id": 9,
+        "nombre": "Set Rose",
+        "precio": 3000.00,
+        "imagen": "src/assets/set_3.jpeg",
+        "descripcion": "El favorito para regalar. Incluye mate + tarrito con yerba y termo!",
+        "categoria": {
+            "id": "sets",
+            "nombre": "Sets"
+        }
+    }
+
+]
