@@ -57,6 +57,11 @@ body{
 
 }
 
+.item-detail img{
+    max-width: 30%;
+    height: auto;
+    margin: 3%;
+}
 .item-list-container {
     max-width: 1000px;
     margin: 0 auto;
