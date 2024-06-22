@@ -1,24 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
+import { CartContext } from '../Context/CartContext';
 
-function ItemDetail({ product }) {
+export const ItemDetail = ( {producto} ) => {
+  const { agregarAlCarrito } = useContext(CartContext);
+
+    
   return (
-    <div className="item-detail">
-      <h2>{product.nombre}</h2>
-      <img src={product.imagen} alt={product.nombre} />
-      <p>{product.descripcion}</p>
-      <p>Precio: ${product.precio}</p>
+    <div>
+        <h2>{producto.nombre}</h2>
+        <img src={producto.imagen} alt={producto.nombre} />
+        <p>{producto.descripcion}</p>
+        <p>Precio: ${producto.precio}</p>
+        <button onClick={() => agregarAlCarrito(producto)}>Agregar al carrito</button>
+
     </div>
-  );
+  )
 }
-
-ItemDetail.propTypes = {
-  product: PropTypes.shape({
-    nombre: PropTypes.string.isRequired,
-    descripcion: PropTypes.string.isRequired,
-    precio: PropTypes.number.isRequired,
-    imagen: PropTypes.string.isRequired
-  }).isRequired
-};
-
 export default ItemDetail;
+

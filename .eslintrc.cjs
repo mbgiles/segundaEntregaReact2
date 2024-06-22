@@ -19,4 +19,23 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 'off', 
   },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended',
+    'plugin:prettier/recommended',
+  ],
+  rules: {
+    'react/jsx-no-target-blank': 'off',
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
+    'react/react-in-jsx-scope': 'off',
+    'no-unused-vars': 'warn', // Advierte sobre variables no usadas
+    'no-console': 'warn', // Advierte sobre el uso de console.log
+    'eqeqeq': 'error', // Enforce strict equality
+  },
+  
 }
