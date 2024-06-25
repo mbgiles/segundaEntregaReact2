@@ -1,4 +1,3 @@
-
 import { Link, NavLink } from 'react-router-dom';
 import categories from "../../data/categorias.json";
 
