@@ -17,9 +17,14 @@
     margin-bottom: 5% ;
     box-shadow: 2px 2px 3px 0px rgba(48, 47, 47, 0.75);
 }
+<<<<<<< HEAD
 .logo { 
     max-width: 5%;
     justify-content: left;
+=======
+.logo{
+    max-width: 5%;
+>>>>>>> 87b7025c0ccf240523d506a4779233251fdc97d5
 }
 body{
     font-family: sans-serif;

@@ -18,4 +18,8 @@ export const CartWidget = () => {
       <CartCheck color="black" /> {cantidad}
     </Link>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 87b7025c0ccf240523d506a4779233251fdc97d5
