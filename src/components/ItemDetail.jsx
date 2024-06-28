@@ -8,7 +8,7 @@ export const ItemDetail = ( {producto} ) => {
   return (
     <div>
         <h2>{producto.nombre}</h2>
-        <img src={producto.imagen} alt={producto.nombre} />
+        <img className='detalle-imagen' src={producto.imagen} alt={producto.nombre} />
         <p>{producto.descripcion}</p>
         <p>Precio: ${producto.precio}</p>
         <button onClick={() => agregarAlCarrito(producto)}>Agregar al carrito</button>
