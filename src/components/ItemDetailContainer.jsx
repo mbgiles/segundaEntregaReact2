@@ -5,31 +5,40 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
 
 const ItemDetailContainer = () => {
-    let { itemId } = useParams();
-    let [producto, setProducto] = useState(undefined);
+  let { itemId } = useParams();
+  let [producto, setProducto] = useState(undefined);
+  let [error, setError] = useState(false);
+  let [loading, setLoading] = useState(true);
 
-    let error = false;
-
-
-    useEffect(() => {
-
+  useEffect(() => {
+    const fetchProducto = async () => {
+      try {
         const docRef = doc(db, "productos", itemId);
-        getDoc(docRef)
-        .then(res => {
-            setProducto({...res.data(), id: res.id})
-        })
-
-    }, [itemId]);
-
-    if (producto){
-    return <ItemDetail producto={producto} />
-    } else if (error) {
-        return <div>Ha ocurrido un error</div>
-         } else {
-            return <div>Cargando...</div>
-         }
-
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          setProducto({ ...docSnap.data(), id: docSnap.id });
+        } else {
+          setError(true);
+        }
+      } catch (e) {
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
     };
 
+    fetchProducto();
+  }, [itemId]);
+
+  if (loading) {
+    return <div>Cargando...</div>;
+  }
+
+  if (error) {
+    return <div>Ha ocurrido un error</div>;
+  }
+
+  return <ItemDetail producto={producto} />;
+};
 
 export default ItemDetailContainer;

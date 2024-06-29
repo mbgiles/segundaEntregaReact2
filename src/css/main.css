@@ -9,7 +9,7 @@
 } */
 
 .header {
-    background-color: #f4bfbf;
+    background-color: #d9d9a1;
     display: flex;
     justify-content:space-between;
     padding: 1rem;
@@ -24,10 +24,10 @@
 body{
     font-family: sans-serif;
     text-decoration: #5f6464;
-    background: linear-gradient(#eeebeb, #ffffff);
+    background: linear-gradient(#e7dada, #f4bfbf);
 };
 
-h1 {color: #5c3c3c;
+h1 {color: #ff0000;
     text-decoration: none;
     font-size: larger;
     justify-content: left;
@@ -59,10 +59,10 @@ h2 {color: #3f4140;
 }
 
 .nav-link {
-    color :#000000;
+    color :#5a5959;
     text-decoration: none;
-    font-size: medium;
-    font-weight: 100;
+    font-size:larger;
+    
 }
 
 .nav-link.active {
@@ -147,7 +147,7 @@ p {
   }
   
   button:hover {
-    background-color: #23c483;
+    background-color: #d7e2ca;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);

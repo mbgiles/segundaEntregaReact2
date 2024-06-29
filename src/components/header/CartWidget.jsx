@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { CartCheck } from 'react-bootstrap-icons';
+import { BagHeart } from 'react-bootstrap-icons'; 
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../Context/CartContext';
 
@@ -15,7 +15,7 @@ export const CartWidget = () => {
 
   return (
     <Link className="carrito" to="/carrito">
-      <CartCheck color="black" /> {cantidad}
+      <BagHeart color="black" /> {cantidad}
     </Link>
   );
 }
