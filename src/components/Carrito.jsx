@@ -9,6 +9,10 @@ const Carrito = () => {
     vaciarCarrito();
   }
 
+  const totalFormateado = () => {
+    return calcularTotal().toFixed(2); // Limita el total a 2 decimales
+  }
+
   return (
     <div className="carrito">
         {carrito.map((prod) => (
@@ -23,9 +27,9 @@ const Carrito = () => {
         {
           carrito.length > 0 ?
           <>
-            <h2>Total: ${calcularTotal()}</h2>
+            <h2>Total: ${totalFormateado()}</h2>
             <button onClick={handleVaciar}>Vaciar carrito</button>
-            <Link to= "/finalizar-compra">Finalizar compra</Link>
+            <Link to= "/finalizar-compra" className="button-link">Finalizar compra</Link>
           </> :
           <h2>Carrito vacío 😥</h2>
         }

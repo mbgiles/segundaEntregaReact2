@@ -56,7 +56,7 @@ export const Checkout = () => {
                 <div>
                     <input
                         type="text"
-                        placeholder="Nombre"
+                        placeholder="Nombre *"
                         {...register("nombre", { required: "El nombre es obligatorio" })}
                     />
                     {errors.nombre && <p>{errors.nombre.message}</p>}
@@ -64,7 +64,7 @@ export const Checkout = () => {
                 <div>
                     <input
                         type="email"
-                        placeholder="Email"
+                        placeholder="Email *"
                         {...register("email", {
                             required: "El email es obligatorio",
                             pattern: {
@@ -79,7 +79,7 @@ export const Checkout = () => {
                     <input
                         type="tel"
                         placeholder="Teléfono"
-                        {...register("telefono", { required: "El teléfono es obligatorio" })}
+                        {...register("telefono" )}
                     />
                     {errors.telefono && <p>{errors.telefono.message}</p>}
                 </div>
@@ -87,7 +87,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="Calle y número"
-                        {...register("direccion", { required: "La dirección es obligatoria" })}
+                        {...register("direccion" )}
                     />
                     {errors.direccion && <p>{errors.direccion.message}</p>}
                 </div>
@@ -95,7 +95,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="Ciudad"
-                        {...register("ciudad", { required: "La ciudad es obligatoria" })}
+                        {...register("ciudad" )}
                     />
                     {errors.ciudad && <p>{errors.ciudad.message}</p>}
                 </div>
@@ -103,7 +103,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="Provincia/Estado"
-                        {...register("provincia", { required: "La provincia es obligatoria" })}
+                        {...register("provincia")}
                     />
                     {errors.provincia && <p>{errors.provincia.message}</p>}
                 </div>
@@ -111,7 +111,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="Código Postal"
-                        {...register("codigoPostal", { required: "El código postal es obligatorio" })}
+                        {...register("codigoPostal" )}
                     />
                     {errors.codigoPostal && <p>{errors.codigoPostal.message}</p>}
                 </div>
@@ -119,7 +119,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="País"
-                        {...register("pais", { required: "El país es obligatorio" })}
+                        {...register("pais", )}
                     />
                     {errors.pais && <p>{errors.pais.message}</p>}
                 </div>
@@ -127,7 +127,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="Nombre del titular de la tarjeta"
-                        {...register("titularTarjeta", { required: "El nombre del titular es obligatorio" })}
+                        {...register("titularTarjeta" )}
                     />
                     {errors.titularTarjeta && <p>{errors.titularTarjeta.message}</p>}
                 </div>
@@ -135,9 +135,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="Número de tarjeta de crédito/débito"
-                        {...register("numeroTarjeta", {
-                            required: "El número de tarjeta es obligatorio",
-                        })}
+                        {...register("numeroTarjeta")}
                     />
                     {errors.numeroTarjeta && <p>{errors.numeroTarjeta.message}</p>}
                 </div>
@@ -145,9 +143,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="Fecha de vencimiento (MM/AA)"
-                        {...register("fechaVencimiento", {
-                            required: "La fecha de vencimiento es obligatoria",
-                        })}
+                        {...register("fechaVencimiento" )}
                     />
                     {errors.fechaVencimiento && <p>{errors.fechaVencimiento.message}</p>}
                 </div>
@@ -155,9 +151,7 @@ export const Checkout = () => {
                     <input
                         type="text"
                         placeholder="CVV"
-                        {...register("cvv", {
-                            required: "El CVV es obligatorio",
-                        })}
+                        {...register("cvv")}
                     />
                     {errors.cvv && <p>{errors.cvv.message}</p>}
                 </div>
